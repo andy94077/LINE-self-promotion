@@ -62,6 +62,7 @@ def handle_message(event):
 
 
 if __name__ == "__main__":
+    app.debug = True
     port = int(os.environ.get('PORT', 5000))
     handler = logging.FileHandler('flask.log')
     app.logger.addHandler(handler)
