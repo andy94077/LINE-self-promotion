@@ -20,6 +20,7 @@ handler = WebhookHandler('351967b479cda699b4bc98225a253054')
 with open('messages.json', 'rb') as f:
     reply_msgs = json.load(f)
 
+
 @app.route("/callback", methods=['POST'])
 def callback():
     # get X-Line-Signature header value
@@ -41,7 +42,17 @@ def handle_message(event):
     text = event.message.text.lower().strip()
     reply = reply_msgs.get(text, reply_msgs['help'])
 
-    message = TextSendMessage(text=reply)
+    if text == 'work funpodium':
+        message = TemplateSendMessage(
+            template=ButtonsTemplate(
+                title='sw-project',
+                text=reply,
+                thumbnail_image_url='https://www.hcytlog.com/upload/GitHub-logo_202011055020_.png',
+                actions=[URIAction(label='view repo', uri='https://github.com/andy94077/sw-project')]
+            )
+        )
+    else:
+        message = TextSendMessage(text=reply)
     line_bot_api.reply_message(event.reply_token, message)
 
 
