@@ -44,6 +44,7 @@ def handle_message(event):
 
     if text == 'work funpodium':
         message = TemplateSendMessage(
+            alt_text=reply,
             template=ButtonsTemplate(
                 title='sw-project',
                 text=reply,
