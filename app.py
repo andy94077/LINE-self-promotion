@@ -48,7 +48,7 @@ def handle_message(event):
             TemplateSendMessage(
                 alt_text=reply,
                 template=ButtonsTemplate(
-                    text='sw-project. A social website project inspired by Pinterest and Instagram.',
+                    title='sw-project',
                     thumbnail_image_url='https://www.hcytlog.com/upload/GitHub-logo_202011055020_.png',
                     actions=[URIAction(label='view repo', uri='https://github.com/andy94077/sw-project')]
                 )
