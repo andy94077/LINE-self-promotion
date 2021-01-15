@@ -49,7 +49,7 @@ def handle_message(event):
                 alt_text=reply,
                 template=ButtonsTemplate(
                     title='sw-project',
-                    text='',
+                    text='A social website project inspired by Pinterest.',
                     thumbnail_image_url='https://www.hcytlog.com/upload/GitHub-logo_202011055020_.png',
                     actions=[URIAction(label='view repo', uri='https://github.com/andy94077/sw-project')]
                 )
