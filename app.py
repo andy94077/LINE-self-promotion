@@ -43,15 +43,18 @@ def handle_message(event):
     reply = reply_msgs.get(text, reply_msgs['help'])
 
     if text == 'work funpodium':
-        message = TemplateSendMessage(
-            alt_text=reply,
-            template=ButtonsTemplate(
-                title='sw-project',
-                text=reply,
-                thumbnail_image_url='https://www.hcytlog.com/upload/GitHub-logo_202011055020_.png',
-                actions=[URIAction(label='view repo', uri='https://github.com/andy94077/sw-project')]
+        message = [
+            TextSendMessage(text=reply),
+            TemplateSendMessage(
+                alt_text=reply,
+                template=ButtonsTemplate(
+                    title='sw-project',
+                    text='A social website project inspired by Pinterest and Instagram.',
+                    thumbnail_image_url='https://www.hcytlog.com/upload/GitHub-logo_202011055020_.png',
+                    actions=[URIAction(label='view repo', uri='https://github.com/andy94077/sw-project')]
+                )
             )
-        )
+        ]
     else:
         message = TextSendMessage(text=reply)
     line_bot_api.reply_message(event.reply_token, message)
