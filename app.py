@@ -35,7 +35,27 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = TextSendMessage(text=event.message.text)
+    text = event.message.text.lower()
+    if text == 'work history':
+        reply = '''CMLab, National Taiwan University. Special Research Undergraduate, Jan. 2020 – Present.
+Funpodium. Web Developer Intern, July 2020 – Aug. 2020.
+AICS, ASUSTek COMPUTER INC. Software Engineering Intern, July 2019 – Aug. 2019.
+'''
+    elif text == 'skills':
+        reply = 'C, C++, Python, Machine Learning, Deep Learning, React, Javascript'
+    elif text == 'awards':
+        reply = '''Honorable Mention, Special Research Exhibition – Department of Computer Science, National Taiwan University, June 2020.
+Student Group Leaderboards Honorable Mention, Ministry of Education Intercollegiate AI CUP 2019 – Ministry of Education, Jan. 2020.
+'''
+    else:
+        reply = u'''I am Yi-Rong Chen.
+I'm a senior student at the Department of Computer Science, National Taiwan University. I specialize in frontend, backend, and deep learning. Type 
+• "Work History" to show my working experience.
+• "Skills" to show my programming skills.
+• "Awards" to show awards I got.
+Or, type "Help" to show this helping message.'''
+
+    message = TextSendMessage(text=reply)
     line_bot_api.reply_message(event.reply_token, message)
 
 
