@@ -1,11 +1,11 @@
 {
-  "work": "• CMLab, National Taiwan University. Special Research Undergraduate, Jan. 2020 – Present. \n\n• Funpodium. Web Developer Intern, July 2020 – Aug. 2020.\n\n• AICS, ASUSTek COMPUTER INC. Software Engineering Intern, July 2019 – Aug. 2019.\nType \"work <name>\" for details.",
+  "work": "• CMLab, National Taiwan University. Special Research Undergraduate, Jan. 2020 – Present. \n\n• Funpodium. Web Developer Intern, July 2020 – Aug. 2020.\n\n• AICS, ASUSTek COMPUTER INC. Software Engineering Intern, July 2019 – Aug. 2019.\n\nType \"work cmlab/funpodium/aics\" for details.",
   "work cmlab": "Worked in Prof. Winston Hsu’s lab. Worked in the field of cross-domain few-shot learning with around six members. Trained on miniImagenet, and then tested on distinct datasets such as CropDisease, EuroSAT, ISIC, and ChestX.",
   "work funpodium": "Build a social website like Pinterest and Instagram with React and Laravel in a four-people team. Users can upload their photos, write comments, follow other users, and chat with their friends.",
   "work aics": "Developed facial recognition models in a 6-person team. Used GAN to build models generating old face pictures from young face pictures. Optimized the development procedure with Azure Pipelines.",
   "skills": "C, C++, Python, Machine Learning, Deep Learning, React, Javascript",
-  "awards": "• Honorable Mention, Special Research Exhibition – Department of Computer Science, National Taiwan University, June 2020.\n\n• Student Group Leaderboards Honorable Mention, Ministry of Education Intercollegiate AI CUP 2019 – Ministry of Education, Jan. 2020.\nType \"awards <name>\" for details.",
-  "awards honorable": "Presented the work we did, cross-domain few-shot learning, in CMLab. Worked in Prof. Winston Hsu’s lab. Worked in the field of cross-domain few-shot learning with around six members.",
-  "awards student": "An international AI competition hosted by Ministry of Education and TREND MICRO. Used BERT to predict classes of theses. Won ninth place in the contest.",
+  "awards": "• Honorable Mention, Special Research Exhibition – Department of Computer Science, National Taiwan University, June 2020.\n\n• Student Group Leaderboards Honorable Mention, Ministry of Education Intercollegiate AI CUP 2019 – Ministry of Education, Jan. 2020.\n\nType \"awards research/ministry\" for details.",
+  "awards research": "Presented the work we did, cross-domain few-shot learning, in CMLab. Worked in Prof. Winston Hsu’s lab. Worked in the field of cross-domain few-shot learning with around six members.",
+  "awards ministry": "An international AI competition hosted by Ministry of Education and TREND MICRO. Used BERT to predict classes of theses. Won ninth place in the contest.",
   "help": "I am Andy Chen.\nI'm a senior student at the Department of Computer Science, National Taiwan University. I specialize in frontend, backend, and deep learning.\nType\n• \"work\" to show my working experience.\n• \"skills\" to show my programming skills.\n• \"awards\" to show awards I got.\nOr, type \"Help\" to show this helping message."
 }
